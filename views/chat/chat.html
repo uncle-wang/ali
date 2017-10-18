@@ -9,8 +9,11 @@
 <body>
 	<ul class="list" id="list"></ul>
 	<div class="send-box-wrap">
-		<div class="send-text-wrap"><input type="text" class="send-text" id="send-text"></div>
-		<div class="send-submit-wrap"><a class="send-submit" id="send-submit">send</a></div>
+		<form id="send-form" action="#" method="get">
+			<div class="send-text-wrap"><input type="text" class="send-text" id="send-text" name="send-text"></div>
+			<div class="send-btn-wrap"><a class="send-btn" id="send-btn">send</a></div>
+			<input type="submit" class="send-submit">
+		</form>
 	</div>
 	<script type="text/javascript" src="/resources/chat/js/chat.js"></script>
 </body>
