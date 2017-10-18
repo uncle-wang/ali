@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/uncle-wang/ali/issues"
   },
-  "homepage": "https://github.com/uncle-wang/ali#readme"
+  "homepage": "https://github.com/uncle-wang/ali#readme",
+  "dependencies": {
+    "express": "^4.16.2"
+  }
 }
