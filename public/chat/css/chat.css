@@ -2,3 +2,71 @@
 	margin: 0;
 	padding: 0;
 }
+body {
+	font-family: Arial;
+	background-color: #eaeaea;
+}
+.list {
+	padding: 24px 32px 68px;
+	list-style-type: none;
+	overflow: hidden;
+}
+.item {
+	background-color: #f9f9f9;
+	margin-top: 24px;
+	border-radius: 5px;
+	padding: 8px 12px;
+	font-size: 14px;
+	color: #484848;
+}
+.item:first-child {
+	margin-top: 0;
+}
+.send-box-wrap {
+	position: fixed;
+	width: 100%;
+	height: 48px;
+	bottom: 0;
+	background-color: #f3f3f3;
+	border-top: 1px solid #dcdcdc;
+}
+#send-form {
+	height: 100%;
+	overflow: hidden;
+}
+.send-text-wrap {
+	margin: 8px 100px 0 24px;
+	height: 30px;
+	background-color: #fff;
+	padding: 0 12px;
+	border: 1px solid #dcdcdc;
+	border-radius: 5px;
+}
+.send-text {
+	display: block;
+	background-color: #ffffff;
+	border: none;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	outline: none;
+	font-size: 14px;
+}
+.send-submit-wrap {
+	position: absolute;
+	height: 30px;
+	width: 64px;
+	right: 24px;
+	top: 9px;
+}
+.send-submit {
+	background-color: #3b963f;
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	border-radius: 3px;
+	font-size: 16px;
+	display: block;
+	text-align: center;
+	line-height: 30px;
+}
