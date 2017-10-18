@@ -9,10 +9,18 @@ var env = process.env.NODE_ENV;
 // 生产环境使用80端口
 var port = env === 'production' ? 80 : 3000;
 
+require('./controller/chat');
+
 app
 
 // 资源路径
-.use('/public/resources', express.static('public'))
+.use('/resources', express.static('public'))
+
+// jade模板引擎
+.set('view engine', 'pug')
+
+// 设置模板路径
+.set('views', './views')
 
 // 根路径
 .get('/', function(req, res) {
