@@ -7,7 +7,6 @@ ws.onerror = function() {
 
 ws.onopen = function (e) {
 
-	console.log(e);
 	console.log('Connection to server opened');
 };
 
@@ -74,6 +73,8 @@ var sendMessage = function() {
 	inputBox.blur();
 	scrollToBottom();
 };
+
+initNotification();
 
 document.getElementById('send-btn').onclick = function() {
 
