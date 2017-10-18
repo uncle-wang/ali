@@ -22,7 +22,10 @@ wss.on('connection', function(ws) {
 	ws.on('message', function(message) {
 
 		for (var i = 0; i < clients.length; i ++) {
-			clients[i].send(message);
+			var client = clients[i];
+			if (client !== ws) {
+				client.send(message);
+			}
 		}
 	});
 

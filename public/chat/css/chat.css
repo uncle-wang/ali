@@ -19,6 +19,10 @@ body {
 	font-size: 14px;
 	color: #484848;
 }
+.item.self {
+	background-color: #3b963f;
+	color: #fff;
+}
 .item:first-child {
 	margin-top: 0;
 }
