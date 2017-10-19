@@ -1,0 +1,253 @@
+@font-face {
+  font-family: Roboto;
+  src: url('http://cdn.eagleheadline.com/archives/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url('http://cdn.eagleheadline.com/archives/Roboto-Bold.ttf');
+}
+// @font-face {
+//   font-family: Roboto-BoldCondensed;
+//   src: url(../fonts/Roboto-BoldCondensed.ttf);
+// }
+// @font-face {
+//   font-family: Roboto-Condensed;
+//   src: url(../fonts/Roboto-Condensed.ttf);
+// }
+// @font-face {
+//   font-family: Roboto-Medium;
+//   src: url(../fonts/Roboto-Medium.ttf);
+// }
+* {
+    margin: 0;
+    padding: 0;
+    color: #666;
+    font-family: Roboto, Arial;
+    outline: none;
+}
+li {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+    color: #000;
+}
+img{
+    display:block;
+    margin: 0;
+    padding: 0;
+}
+body {
+    max-width: 640px;
+    margin: 0 auto;
+}
+.Fix::after{ content:''; display:block; clear:both; }
+
+.opacity(@opacity){
+    -webkit-opacity: @opacity;
+    -moz-opacity: @opacity;
+    -khtml-opacity: @opacity;
+    opacity: @opacity;
+    filter:alpha(opacity=50);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+}
+
+.opacity(@opacity){
+    -webkit-opacity: @opacity;
+    -moz-opacity: @opacity;
+    -khtml-opacity: @opacity;
+    opacity: @opacity;
+    filter:alpha(opacity=80);
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+    filter:progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+}
+.displaybox {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -o-box;
+    display: box;
+}
+.flex(@num) {
+    -webkit-box-flex:@num;
+    -moz-box-flex:@num;
+    -o-box-flex:@num;
+    box-flex:@num;
+}
+.align(@pos) {
+    -webkit-box-align: @pos;
+    -moz-box-align: @pos;
+    -o-box-align: @pos;
+    box-align: @pos;
+}
+.vertical {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    box-orient: vertical;
+}
+.pack (@pos){
+    -webkit-box-pack: @pos;
+    -moz-box-pack: @pos;
+    -o-box-pack: @pos;
+    box-pack: @pos;
+}
+.detailbody
+{
+    overflow: hidden;
+    padding: 10px 16px 48px;
+    .title
+    {
+        font-family: Roboto-Bold;
+        font-size: 24px;
+        font-weight: bold;
+        word-wrap: break-word;
+        color: #1a1a1a;
+    }
+    .newsDate
+    {
+        font-size: 12px;
+        width: 100%;
+        margin-top: 12px;
+        color: #9e9e9e;
+    }
+    .content
+    {
+        .text
+        {
+            font-size: 18px;
+            margin: 20px 0;
+            word-break: break-word;
+            color: #333;
+        }
+        .figure
+        {
+            position: relative;
+            margin: 20px 0;
+            img
+            {
+                width: 100%;
+                margin: 0;
+            }
+            .videoArea
+            {
+                position: absolute;
+                z-index: 2;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                opacity: 0;
+                background: #fff;
+            }
+            .playGifBtn
+            {
+                position: absolute;
+                z-index: 1;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                img
+                {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    width: 32px;
+                    height: 32px;
+                    margin-top: -16px;
+                    margin-left: -16px;
+                }
+            }
+        }
+        .imgdesc
+        {
+            font-size: 12px;
+            display: block;
+            margin-top: 15px;
+            word-break: break-word;
+            color: #888;
+        }
+        .mp4Video
+        {
+            margin: 20px 0;
+        }
+        .youtubeVideo
+        {
+            position: relative;
+            width: 100%;
+            margin: 20px 0;
+            padding-top: 56.25%;
+            .yt-video-wrap
+            {
+                position: absolute;
+                top: 0;
+                left: 0;
+                display: block;
+                width: 100%;
+                height: 100%;
+            }
+            .yt-video-layer
+            {
+                position: absolute;
+                z-index: 2;
+                top: 0;
+                left: 0;
+                display: none;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                color: #fff;
+                background-color: #000;
+                background-image: url('http://cdn.eagleheadline.com/archives/videodefault.png');
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: 98px;
+            }
+            .yt-video-replay
+            {
+                position: relative;
+                top: 50%;
+                left: 50%;
+                width: 48px;
+                height: 48px;
+                margin-top: -24px;
+                margin-left: -24px;
+                background-image: url('http://cdn.eagleheadline.com/archives/reload_icon.png');
+                background-size: contain;
+            }
+        }
+    }
+}
+
+
+
+.loadingIcon {
+    animation: circleMove .4s linear infinite;
+    -webkit-animation: circleMove .4s linear infinite;
+}
+@keyframes circleMove {
+    from{
+        transform:rotate(0deg);
+    }
+    to{
+        transform:rotate(-360deg);
+    }
+}
+@-webkit-keyframes circleMove {
+    from{
+        -webkit-transform:rotate(0deg);
+    }
+    to{
+        -webkit-transform:rotate(-360deg);
+    }
+}
+
+.videoTitle {
+    font-weight:700;
+    font-size:16px;
+    color:#333;
+    padding-bottom:20px;
+    font-family: Roboto-Bold;
+}

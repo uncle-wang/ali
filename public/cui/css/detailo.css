@@ -1,0 +1,185 @@
+@font-face {
+  font-family: Roboto;
+  src: url('http://cdn.eagleheadline.com/archives/Roboto-Regular.ttf');
+}
+@font-face {
+  font-family: Roboto-Bold;
+  src: url('http://cdn.eagleheadline.com/archives/Roboto-Bold.ttf');
+}
+* {
+  margin: 0;
+  padding: 0;
+  color: #666;
+  font-family: Roboto, Arial;
+  outline: none;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+img {
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 640px;
+  margin: 0 auto;
+}
+.Fix::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.displaybox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -o-box;
+  display: box;
+}
+.vertical {
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  box-orient: vertical;
+}
+.detailbody {
+  overflow: hidden;
+  padding: 10px 16px 48px;
+}
+.detailbody .title {
+  font-family: Roboto-Bold;
+  font-size: 24px;
+  font-weight: bold;
+  word-wrap: break-word;
+  color: #1a1a1a;
+}
+.detailbody .newsDate {
+  font-size: 12px;
+  width: 100%;
+  margin-top: 12px;
+  color: #9e9e9e;
+}
+.detailbody .content .text {
+  font-size: 18px;
+  margin: 20px 0;
+  word-break: break-word;
+  color: #333;
+}
+.detailbody .content .figure {
+  position: relative;
+  margin: 20px 0;
+}
+.detailbody .content .figure img {
+  width: 100%;
+  margin: 0;
+}
+.detailbody .content .figure .videoArea {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  opacity: 0;
+  background: #fff;
+}
+.detailbody .content .figure .playGifBtn {
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.detailbody .content .figure .playGifBtn img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 32px;
+  height: 32px;
+  margin-top: -16px;
+  margin-left: -16px;
+}
+.detailbody .content .imgdesc {
+  font-size: 12px;
+  display: block;
+  margin-top: 15px;
+  word-break: break-word;
+  color: #888;
+}
+.detailbody .content .mp4Video {
+  margin: 20px 0;
+}
+.detailbody .content .youtubeVideo {
+  position: relative;
+  width: 100%;
+  margin: 20px 0;
+  padding-top: 56.25%;
+}
+.detailbody .content .youtubeVideo .yt-video-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.detailbody .content .youtubeVideo .yt-video-layer {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  color: #fff;
+  background-color: #000;
+  background-image: url('http://cdn.eagleheadline.com/archives/videodefault.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 98px;
+}
+.detailbody .content .youtubeVideo .yt-video-replay {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  width: 48px;
+  height: 48px;
+  margin-top: -24px;
+  margin-left: -24px;
+  background-image: url('http://cdn.eagleheadline.com/archives/reload_icon.png');
+  background-size: contain;
+}
+.loadingIcon {
+  animation: circleMove .4s linear infinite;
+  -webkit-animation: circleMove .4s linear infinite;
+}
+@keyframes circleMove {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes circleMove {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(-360deg);
+  }
+}
+.videoTitle {
+  font-weight: 700;
+  font-size: 16px;
+  color: #333;
+  padding-bottom: 20px;
+  font-family: Roboto-Bold;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8">
+    <meta name="keywords" content="Eagleee news, news headline, African news trends, world news, Eagleheadline">
+    <meta property="og:title" content="${content.title} - eagleee" />
+    <meta property="fb:app_id" content="1528741077171293" />
+    <meta property="og:image" content="${content.url}" />
+    <meta property="og:description" content="${content.text}" />
+    <title>${content.title}</title>
+    <link rel="stylesheet" href="http://cdn.eagleheadline.com/archives/detailo.css">
+</head>
+<body ng-controller="detailCtrl"  data-ng-init="load()" ng-cloak>
+    <div class="detailbody">
+        <div class="title">${content.title}</div>
+        <div class="newsDate">JC News | 2017-10-11</div>
+        <div class="content">
+            <!-- <div class="youtubeVideo videoBox">
+                <yt-video videosrc="{{video_youtube}}"></yt-video>
+            </div> -->
+            <!-- <div class="mp4Video videoBox">
+                <video class="videoArea" ng-src="{{video_mp4|trustAsResourceUrl}}" width="100%" controls></video>
+            </div> -->
+            <!-- <div class="figure">
+                <gifhandle giflink="{{video_mp4}}" type="mp4" thumpic="{{thumpic}}"></gifhandle>
+            </div> -->
+            <div class="figure">
+                <gifhandle giflink="{{gif}}" type="gif" thumpic="{{thumpica}}"></gifhandle>
+            </div>
+            <!-- <div ng-repeat="item in langText  track by $index">
+                <p class="text" ng-bind-html="item.text|trust2Html" ng-if="item.text"></p>
+                <span class="imgdesc" ng-bind-html="item.imgdesc|trust2Html" ng-if="item.imgdesc"></span>
+                <div class="figure" ng-if="item.imgurl">
+                    <img ng-src="{{item.imgurl}}">
+                </div>
+            </div> -->
+            <!-- <div ng-repeat="item in shortText  track by $index">
+                <p class="text" ng-bind-html="item.text|trust2Html" ng-if="item.text"></p>
+                <span class="imgdesc" ng-bind-html="item.imgdesc|trust2Html" ng-if="item.imgdesc"></span>
+                <div class="figure" ng-if="item.imgurl">
+                    <img ng-src="{{item.imgurl}}">
+                </div>
+            </div> -->
+        </div>
+    </div>
+    <script type="text/javascript" src="http://cdn.eagleheadline.com/archives/angular.min.js"></script>
+    <script type="text/javascript" src="http://cdn.eagleheadline.com/archives/youtube_iframe_api.js"></script>
+    <script type="text/javascript" src="./js/configo.js"></script>
+    
+</body>
+</html>
