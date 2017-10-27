@@ -7,6 +7,7 @@ WORKDIR /workspace/ali
 # Bundle app source
 COPY . /workspace/ali
 RUN npm install
+RUN npm install -g forever
 
-EXPOSE 80
+EXPOSE 6932
 CMD [ "npm", "start" ]

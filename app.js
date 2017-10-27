@@ -3,12 +3,6 @@ expressInsatance = require('./express'),
 express = expressInsatance.express,
 app = expressInsatance.app;
 
-// 运行环境
-var env = process.env.NODE_ENV;
-
-// 生产环境使用80端口
-var port = env === 'production' ? 80 : 3000;
-
 require('./controller/chat');
 
 app
@@ -35,7 +29,7 @@ app
 })
 
 // 服务
-.listen(port, function (req, res) {
+.listen(6932, function (req, res) {
 
-	console.log('app is running at port ' + port);
+	console.log('app is running at port 6932');
 });
