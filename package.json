@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "forever -c 'node --harmony' app.js"
+    "start": "pm2 start app.js --no-daemon"
   },
   "repository": {
     "type": "git",

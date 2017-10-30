@@ -7,7 +7,7 @@ WORKDIR /workspace/ali
 # Bundle app source
 COPY . /workspace/ali
 RUN npm install
-RUN npm install -g forever
+RUN npm install -g pm2
 
 EXPOSE 6932
 EXPOSE 3031
