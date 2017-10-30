@@ -11,4 +11,3 @@ RUN npm install -g forever
 
 EXPOSE 6932
 EXPOSE 3031
-CMD [ "npm", "start" ]
