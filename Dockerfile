@@ -1,4 +1,4 @@
-FROM hub.c.163.com/nce2/nodejs:6.11.2
+FROM node:6.11.2
 
 # Create app directory
 RUN mkdir -p /workspace/ali
