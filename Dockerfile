@@ -1,4 +1,4 @@
-FROM hub.c.163.com/nce2/nodejs:0.12.2
+FROM hub.c.163.com/nce2/nodejs:6.11.2
 
 # Create app directory
 RUN mkdir -p /workspace/ali
@@ -11,3 +11,5 @@ RUN npm install -g forever
 
 EXPOSE 6932
 EXPOSE 3031
+
+CMD ["npm", "start"]
