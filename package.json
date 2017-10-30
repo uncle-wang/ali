@@ -4,7 +4,7 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "forever start app.js"
+    "start": "forever -c 'node --harmony' app.js"
   },
   "repository": {
     "type": "git",
