@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>测试</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="/resources/test/test.css">
+	<script type="text/javascript" src="/resources/test/jquery-2.1.4.min.js"></script>
+	<script type="text/javascript" src="/resources/test/angular.min.js"></script>
+	<script type="text/javascript">
+		var writeText = function(text) {
+			document.write(text);
+		};
+	</script>
+</head>
+<body>
+	<p class="roboto-regular">Hello world. --- roboto-regular字体</p>
+	<p>Hello world. --- Arial字体(对比用)</p><br />
+	<p class="roboto-bold">Hello world. --- roboto-bold字体</p>
+	<p>Hello world. --- Arial字体(对比用)</p><br />
+	<p class="roboto-condensed">Hello world. --- roboto-condensed字体</p>
+	<p>Hello world. --- Arial字体(对比用)</p><br />
+	<p class="roboto-bold-condensed">Hello world. --- roboto-bold-condensed字体</p>
+	<p>Hello world. --- Arial字体(对比用)</p><br />
+	<p class="roboto-medium">Hello world. --- roboto-medium字体</p>
+	<p>Hello world. Arial字体(对比用)</p><br />
+	<p>
+		<script type="text/javascript">
+
+			if (typeof jQuery === 'function') {
+
+				writeText('jQuery加载成功')
+			}
+			else {
+				writeText('jQuery加载失败');
+			}
+		</script>
+	</p>
+	<p>
+		<script type="text/javascript">
+
+			if (typeof angular === 'object') {
+
+				writeText('angularjs加载成功')
+			}
+			else {
+				writeText('angularjs加载失败');
+			}
+		</script>
+	</p>
+</body>
+</html>

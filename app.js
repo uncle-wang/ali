@@ -22,6 +22,12 @@ app
 	res.send('hello world');
 })
 
+// 测试
+.get('/test', function(req, res) {
+
+	res.sendFile(__dirname + '/views/test/index.html');
+})
+
 // 404
 .use(function(req, res) {
 

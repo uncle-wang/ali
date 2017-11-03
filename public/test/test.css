@@ -1,0 +1,30 @@
+@font-face {
+	font-family: Roboto-Regular;
+	src: url(Roboto-Regular.ttf);
+}
+@font-face {
+	font-family: Roboto-Bold;
+	src: url(Roboto-Bold.ttf);
+}
+@font-face {
+	font-family: Roboto-BoldCondensed;
+	src: url(Roboto-BoldCondensed.ttf);
+}
+@font-face {
+	font-family: Roboto-Condensed;
+	src: url(Roboto-Condensed.ttf);
+}
+@font-face {
+	font-family: Roboto-Medium;
+	src: url(Roboto-Medium.ttf);
+}
+
+body {
+	font-family: Arial;
+}
+
+.roboto-regular {font-family: Roboto-Regular}
+.roboto-bold {font-family: Roboto-Bold}
+.roboto-condensed {font-family: Roboto-Condensed}
+.roboto-bold-condensed {font-family: Roboto-BoldCondensed}
+.roboto-medium {font-family: Roboto-Medium}
