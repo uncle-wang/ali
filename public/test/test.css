@@ -23,8 +23,8 @@ body {
 	font-family: Arial;
 }
 
-.roboto-regular {font-family: Roboto-Regular}
-.roboto-bold {font-family: Roboto-Bold}
-.roboto-condensed {font-family: Roboto-Condensed}
-.roboto-bold-condensed {font-family: Roboto-BoldCondensed}
-.roboto-medium {font-family: Roboto-Medium}
+.roboto-regular {font-family: Roboto-Regular, Arial;}
+.roboto-bold {font-family: Roboto-Bold, Arial;}
+.roboto-condensed {font-family: Roboto-Condensed, Arial;}
+.roboto-bold-condensed {font-family: Roboto-BoldCondensed, Arial;}
+.roboto-medium {font-family: Roboto-Medium, Arial;}
